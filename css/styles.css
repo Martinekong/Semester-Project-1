@@ -9,10 +9,13 @@ h3 {
   font-family: Arial, Helvetica, sans-serif; /*MONTSERRAT*/
 }
 
-h1 {}
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
 
 h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.875rem;
   letter-spacing: 10%;
 }
@@ -141,6 +144,9 @@ header {
 
   main {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .exhibitions-title {
@@ -369,3 +375,113 @@ header {
   }  
 
   /*Have to do @media to make sure the background image on hero fills the whole screen when desktop view*/
+
+
+
+  /* ALL PAGES (NOT INDEX) */
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+
+  /* EXHIBITIONS */
+
+  .exhibition-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .exhibition-info {
+    max-width: 500px;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exhibition-info p:nth-child(2) {
+    font-style: italic;
+  }
+
+  .exhibition-card img {
+    max-width: 100%;
+  }
+
+  .exhibition-activity {
+    display: flex;
+    flex-direction: column;
+    background-color: #6145C5;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 20px;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+
+  .exhibition-activity div:first-child {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .exhibition-activity img {
+    max-height: 30px;
+  }
+
+  .exhibition-activity-title {
+    align-items: center;
+  }
+
+  .line-height {
+    line-height: 30px;
+  }
+
+  .events {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .event-card img {
+    max-height: 300px;
+    max-width: 90px;
+  }
+
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+  }
+
+  .event-info p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .event-date {
+    background-color: #6145C5;
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+  }
