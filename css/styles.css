@@ -8,7 +8,7 @@
 h1, 
 h2,
 h3 {
-  font-family: Arial, Helvetica, sans-serif; /*MONTSERRAT*/
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -61,7 +61,7 @@ header {
 
 .header-menu a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif; /*MONTSERRAT*/
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 1.125rem;
   padding-right: 1em;
@@ -320,7 +320,7 @@ header {
   .footer-nav a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif; /*MONTSERRAT*/
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
 
   .footer-end {
