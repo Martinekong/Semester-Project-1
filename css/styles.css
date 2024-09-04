@@ -659,3 +659,59 @@ header {
   .documents h2 {
     text-transform: none;
   }
+
+
+  /* CONTRIBUTIONS */
+
+  .contributions {
+    background-image: url(/assets/images/contributions.jpg);
+    padding: 3rem;
+    color: white;
+  }
+
+  .contributions-text {
+    align-self: flex-start;
+    max-width: 800px;
+  }
+
+  .contributions h1 {
+    font-size: 2rem;
+  }
+
+  .contributions h3 {
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .contributions p {
+    line-height: 30px;
+  }
+
+  .contributions h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .contributions li {
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif; /*POPPINS*/
+    line-height: 30px;
+  }
+
+  .contributions a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; /*POPPINS*/
+    margin-top: 1rem;
+  }
+
+  @media only screen and (min-width: 901px){
+    .contributions-text {
+      align-self: center;
+    }  
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .contributions {
+      background-repeat: round;
+    }
+  }
