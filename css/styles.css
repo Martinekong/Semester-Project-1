@@ -644,18 +644,18 @@ header {
   }
 
 
-  /* PRIVACY POLICY */
+  /* PRIVACY POLICY & TERMS AND CONDITIONS*/
 
-  .privacy-policy {
+  .documents {
     padding: 2rem;
     max-width: 800px;
   }
 
-  .privacy-policy div {
+  .documents div {
     margin-bottom: 2rem;
     line-height: 30px;
   }
 
-  .privacy-policy h2 {
+  .documents h2 {
     text-transform: none;
   }
