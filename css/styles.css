@@ -32,10 +32,17 @@ p {
 }
 
 header {
-  background-image: url(/assets/images/hero.jpg);
-  background-repeat: no-repeat;
   color: white;
   padding: 1.25rem;
+}
+
+.index-header {
+  background-image: url(/assets/images/hero.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  background-color: #0D0D0B;
 }
 
 .header-top {
