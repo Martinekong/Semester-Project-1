@@ -729,3 +729,146 @@ header {
       background-repeat: round;
     }
   }
+
+
+  /* ABOUT */
+
+  .about-header {
+    background-image: url(../assets/images/about-header.jpg);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about-header h1,
+  .about-header h3,
+  .about-header p {
+    color: white;
+    text-align: center;
+  }
+
+  .about-header p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .offer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .offer h2 {
+    text-align: center;
+  }
+
+  .offer-section,
+  .offer-section-reverse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .offer-section img,
+  .offer-section-reverse img {
+    max-width: 100%;
+  }
+
+  .offer-block {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items:flex-start;
+    position: relative;
+  }
+
+  .offer-number {
+    font-size: 9rem;
+    font-weight: bold;
+    opacity: 0.1;
+    line-height: 1;
+    min-width: 126px;
+    position: absolute;
+    top: -20%;
+  }
+
+  .join-us {
+    background-image: url(../assets/images/about-space.jpg);
+    color: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Have to fix the image on .join-us - make it fill the whole width of the screen */
+
+  .join-us div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 720px) {
+  }
+
+  @media only screen and (min-width: 721px) and (max-width: 900px) {
+    .about-header p {
+      padding-right: 10%;
+      padding-left: 10%;
+    }  
+
+    .offer-section {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .offer-section img,
+    .offer-section-reverse img {
+      min-width: 300px;
+    }
+
+    .offer-section-reverse {
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+    }
+
+    .offer-section,
+    .offer-section-reverse {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 901px){
+    .about-header p {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+
+    .offer-section {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .offer-section img,
+    .offer-section-reverse img {
+      min-width: 500px;
+    }
+
+    .offer-section-reverse {
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+    }
+
+    .offer-section,
+    .offer-section-reverse {
+      margin-bottom: 3rem;
+    }
+  }
+
+  /* Much of the same in media queries. DRY!! */
