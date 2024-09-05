@@ -146,110 +146,112 @@ header {
   color: #B60056;
   cursor: pointer;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.activities {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-color: #0B1E2C;
-  color: white;
-}
-
-.activities h3 {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.activity-layout {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.activity {
-  display: flex;
-  gap: 1rem;
-  max-width: 300px;
-  align-items: flex-start;
-}
-
-.activity img {
-  max-width: 30px;
-}
-
-.activity p:first-child {
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-.index-innovation {
-  background-image: url(../assets/images/index-innovationjpg);
-  color: white;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.index-innovation h3 {
-  margin-bottom: 2rem;
-}
-
-.index-innovation p {
-  line-height: 30px;
-}
-
-footer {
-  background-color: #0D0D0B;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  gap: 0.5rem;
-}
-
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.footer-nav a {
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-
-.footer-end {
-  border-top: 1px solid white;
-  display: flex;
-  padding: 0.5rem;
-  justify-content: space-between;
-  gap: 6rem;
-}
-
-.footer-planets {
-  max-width: 100%;
-}
-
-@media only screen and (min-width: 500px) and (max-width:720px) {
-  .hero h1 {
-    font-size: 2rem;
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .hero h2 {
-    font-size: 3.4rem;
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #0B1E2C;
+    color: white;
   }
-}
+
+  .activities h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .activity-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .activity {
+    display: flex;
+    gap: 1rem;
+    max-width: 300px;
+    align-items: flex-start;
+  }
+
+  .activity img {
+    max-width: 30px;
+  }
+
+  .activity p:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .index-innovation {
+    background-image: url(../assets/images/index-innovation.jpg);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-innovation h3 {
+    margin-bottom: 2rem;
+  }
+
+  .index-innovation p {
+    line-height: 30px;
+  }
+
+  footer {
+    background-color: #0D0D0B;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 0.5rem;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+
+  .footer-end {
+    border-top: 1px solid white;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .footer-planets {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 720px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3.4rem;
+    }
+  }
 
 
   @media only screen and (min-width: 721px) and (max-width: 900px) {
