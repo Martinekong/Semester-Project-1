@@ -49,11 +49,8 @@ header {
   }
 }  
 
-.main-header {
+header {
   background-color: #0B1E2C;
-}
-
-.header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +68,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: #375466;
+  background-color: #0B1E2C;
   padding: 1rem;
   position: absolute;
   top:0;
@@ -95,6 +92,7 @@ header {
   max-width: 70%;
   margin-top: 150px;
   padding-bottom: 50px;
+  background-image: url(../assets/images/hero.jpg);
 }
 
 .hero h1 {
@@ -291,31 +289,16 @@ header {
       max-width: 50%;
       align-self: center;
     }
-  }  
-
-  /*Have to do @media to make sure the background image on hero fills the whole screen when desktop view*/
-
-
-
-  /* ALL PAGES (NOT INDEX) */
-
-  .page-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
   }
 
-  /*Can I remove this? When I remove the icons from the headers on index and exhibitions? Have I used it somewhere else?*/
-
+/* used on exhibitions, privacy policy and terms and conditions */
+  .page-header {
+    margin-top: 2rem;
+  }
 
 
   /* EXHIBITIONS */
 
-  .exhibitions-header {
-    margin-top: 2rem;
-  }
 
   .exhibition-card {
     display: flex;
