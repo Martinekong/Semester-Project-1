@@ -149,6 +149,51 @@ header {
     align-items: center;
   }
 
+  .exhibitions {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%; /* Full width of the viewport */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    /*white-space: nowrap; /* Prevent line break, making all images in one row */
+  }
+
+  .exhibitions-gallery {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+  }
+
+  .exhibitions-gallery img {
+    border-radius: 20px;
+    max-width: 400px;
+  }
+
+  .gallery-container {
+    position: relative;
+    color: white;
+  }
+
+  .gallery-container p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .exhibition-arrows {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .exhibition-arrows img {
+    max-height: 1rem;
+  }
+
   .activities {
     display: flex;
     flex-direction: column;
@@ -253,6 +298,10 @@ header {
     .hero p {
       max-width: 80%;
     }
+
+    .exhibitions-gallery img {
+      max-width: 600px;
+    }  
   }
 
 
@@ -270,6 +319,9 @@ header {
     .hero p {
       max-width: 50%;
     }
+    .exhibitions-gallery img {
+      max-width: 900px;
+    }  
   }
 
 
@@ -303,6 +355,10 @@ header {
 
     .hero p {
       max-width: 440px;
+    }
+
+    .exhibitions-gallery img {
+      max-width: 900px;
     }
   }
 
@@ -819,7 +875,7 @@ header {
   .join-us {
     background-image: url(../assets/images/about-space.jpg);
     color: white;
-    padding: 4rem;
+    padding: 4rem 4rem 2rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -839,9 +895,6 @@ header {
     display: flex;
     gap: 2rem;
     justify-content: center;
-  }
-
-  @media only screen and (min-width: 500px) and (max-width: 720px) {
   }
 
   @media only screen and (min-width: 721px) and (max-width: 900px) {
@@ -869,6 +922,10 @@ header {
     .offer-section-reverse {
       margin-bottom: 3rem;
     }
+
+    .join-us {
+      padding-bottom: 4rem;
+    }
   }
 
   @media only screen and (min-width: 901px){
@@ -895,6 +952,10 @@ header {
     .offer-section,
     .offer-section-reverse {
       margin-bottom: 3rem;
+    }
+
+    .join-us {
+      padding-bottom: 4rem;
     }
   }
 
