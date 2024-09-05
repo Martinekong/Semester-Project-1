@@ -918,15 +918,23 @@ header {
     flex-wrap: wrap;
   }
 
-  /* Have to fix the image on .join-us - make it fill the whole width of the screen */
-
   .join-us div {
     display: flex;
     gap: 2rem;
     justify-content: center;
   }
 
+  @media only screen and (min-width:500px) and (max-width: 720px) {
+    .about-header {
+      padding: 4rem;
+    }
+  }
+
   @media only screen and (min-width: 721px) and (max-width: 900px) {
+    .about-header{
+      padding: 6rem;
+    }
+
     .about-header p {
       padding-right: 10%;
       padding-left: 10%;
@@ -958,6 +966,10 @@ header {
   }
 
   @media only screen and (min-width: 901px){
+    .about-header {
+      padding: 8rem;
+    }
+
     .about-header p {
       padding-right: 10%;
       padding-left: 10%;
