@@ -824,7 +824,7 @@ header {
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -839,7 +839,7 @@ header {
 
   .join-us div {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     justify-content: center;
   }
 
