@@ -325,6 +325,10 @@ header {
 
   /* EXHIBITIONS */
 
+  .exhibitions-header {
+    margin-top: 2rem;
+  }
+
   .exhibition-card {
     display: flex;
     flex-wrap: wrap;
@@ -351,7 +355,7 @@ header {
   .exhibition-activity {
     display: flex;
     flex-direction: column;
-    background-color: #6145C5;
+    background-color: #0B1E2C;
     color: white;
     padding: 1rem;
     align-items: center;
@@ -412,7 +416,7 @@ header {
   }
 
   .event-date {
-    background-color: #6145C5;
+    background-color: #0B1E2C;
     color: white;
     border-radius: 4px;
     padding: 0.5rem;
