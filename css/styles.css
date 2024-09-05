@@ -752,6 +752,7 @@ header {
     }
   }
 
+
   /* ABOUT */
 
   .about-header {
@@ -825,6 +826,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .join-buttons {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /* Have to fix the image on .join-us - make it fill the whole width of the screen */
