@@ -703,14 +703,15 @@ header {
   /* CONTRIBUTIONS */
 
   .contributions-hero {
-    background-image: url(../assets/images/contributions-hero-mobile.jpg);
+    background-image: url(../assets/images/contributions-hero.jpg);
     color: white;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    background-position: center;
-    background-size:cover;
+    background-size: cover;
+    max-width: 100%;
     margin-bottom: 2rem;
+    box-sizing: border-box;
   }
 
   .contributions-hero h3 {
@@ -765,11 +766,7 @@ header {
   .contributions-innovation img {
     max-width: 100%;
   }
-
-  .innovation-tablet {
-    display: none;
-  }
-
+  
   .innovation-text {
     padding: 1rem;
     display: flex;
@@ -801,7 +798,6 @@ header {
 
   @media only screen and (min-width: 721px) and (max-width: 900px) {
     .contributions-hero {
-      background-image: url(../assets/images/contributions-hero.jpg);
       padding: 8rem;
     }
 
@@ -813,25 +809,24 @@ header {
 
     .contributions-innovation {
       flex-direction: row;
+      background-image: url(../assets/images/contribution-lightbulb.jpg);
+      background-size: 100%;
+      justify-content: center;
     }
 
     .innovation-text {
-      max-width: 50%;
       padding: 2rem;
+      text-align: center;
+      max-width: 50%;
     }
 
-    .innovation-mobile {
+    .contributions-innovation img {
       display: none;
-    }
-
-    .innovation-tablet {
-      display: block;
     }
   }
 
   @media only screen and (min-width: 901px) {
     .contributions-hero {
-      background-image: url(../assets/images/contributions-hero.jpg);
       padding: 8rem;
     }
 
@@ -843,20 +838,19 @@ header {
 
     .contributions-innovation {
       flex-direction: row;
-    }
-
-    .innovation-text {
-      max-width: 60%;
-      padding: 2rem;
+      background-image: url(../assets/images/contribution-lightbulb.jpg);
+      background-size: 100%;
       justify-content: center;
     }
 
-    .innovation-mobile {
-      display: none;
+    .innovation-text {
+      padding: 4rem;
+      text-align: center;
+      max-width: 50%;
     }
 
-    .innovation-tablet {
-      display: block;
+    .contributions-innovation img {
+      display: none;
     }
   }
 
