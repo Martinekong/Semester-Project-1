@@ -67,7 +67,14 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Send us a message..." required></textarea>
       </form>
-      <a href="#" class="cta">send message</a>
+      <div class="message-button">
+        <input type="checkbox" id="message-checkbox">
+        <label for="message-checkbox" class="cta">send message</label>
+        <div class="message-overlay">
+          <p>Message submitted!</p>
+          <p>You will soon hear from us.</p>
+        </div>
+      </div>
     </section>
 
   </main>

@@ -571,7 +571,7 @@ header {
     padding: 2rem;
   }
 
-  .send-message label {
+  .send-message form label {
     display: none;
   }
 
@@ -589,9 +589,33 @@ header {
     min-height: 200px;
   }
 
-  .send-message a {
+  .message-button {
     margin-bottom: 4rem;
-    justify-content: center;
+    position: relative;
+  }
+
+  #message-checkbox {
+    display: none;
+  }
+
+  .message-overlay {
+    position: absolute;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 0.3rem;
+    text-align: center;
+    max-width: 260px;
+    min-width: 260px;
+    border-radius: 6px;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  #message-checkbox:checked ~.message-overlay {
+    opacity: 1;
+    transition: 0.8s;
   }
 
   @media only screen and (min-width: 500px) and (max-width: 720px) {
@@ -653,24 +677,6 @@ header {
       margin-bottom: 4rem;
     }  
   }
-
-
-  /* PRIVACY POLICY & TERMS AND CONDITIONS*/
-
-  .documents {
-    padding: 2rem;
-    max-width: 800px;
-  }
-
-  .documents div {
-    margin-bottom: 2rem;
-    line-height: 30px;
-  }
-
-  .documents h2 {
-    text-transform: none;
-  }
-
 
   /* CONTRIBUTIONS */
 
@@ -998,4 +1004,19 @@ header {
     }
   }
 
-  /* Much of the same in media queries. DRY!! */
+
+  /* PRIVACY POLICY & TERMS AND CONDITIONS*/
+
+  .documents {
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .documents div {
+    margin-bottom: 2rem;
+    line-height: 30px;
+  }
+
+  .documents h2 {
+    text-transform: none;
+  }
