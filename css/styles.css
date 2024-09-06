@@ -266,12 +266,13 @@ header {
   }
 
   .index-innovation {
-    background-image: url(../assets/images/index-innovation.jpg);
+    background-image: url(../assets/images/contribution-lightbulb.jpg);
     color: white;
     padding: 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-size: cover;
   }
 
   .index-innovation h3 {
@@ -375,7 +376,6 @@ header {
 
     .index-innovation {
       padding: 4rem;
-      background-image: url(../assets/images/index-innovation2.jpg);
     }
 
     .index-innovation div {
