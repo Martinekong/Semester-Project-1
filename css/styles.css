@@ -8,29 +8,40 @@
 h1, 
 h2,
 h3 {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
 } 
 
 h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 4px;
+  font-weight: 800;
 }
 
 h2 {
   text-transform: capitalize;
   font-size: 1.875rem;
   letter-spacing: 2px;
+  font-weight: 800;
 }
 
 h3 {
   font-style: italic;
   text-transform: capitalize;
 }
-/*I removed the color on h3 - go over all pages*/
 
 p {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.header-menu a,
+.footer-nav a {
+  font-family: var(--font-primary);
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
 }
 
 header {
@@ -45,17 +56,13 @@ header {
 }  
 
 header {
-  background-color: #0B1E2C;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .header-menu a {
-  text-decoration: none;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 1.125rem;
   padding-right: 1em;
 }
 
@@ -63,7 +70,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: #0B1E2C;
+  background-color: var(--primary-color);
   padding: 1rem;
   top:0;
   right: 0;
@@ -98,7 +105,6 @@ header {
   }
 }
 
-
 @media only screen and (min-width: 901px){
   .header-nav {
     display: block;
@@ -120,14 +126,14 @@ header {
 }
 
 .hero h1 {
-  font-size: 1.6rem;
-  font-weight: 100;
-  font-style: italic;
+  font-size: 1.875rem;
+  font-weight: 200;
 }
 
 .hero h2 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .hero p {
@@ -147,9 +153,9 @@ header {
   display: flex;
   justify-content: center;
   color: white;
-  background-color: #B60056;
+  background-color: var(--secondary-color);
   padding: 10px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: var(--font-secondary);
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -163,7 +169,7 @@ header {
 
 .cta:hover {
   background-color: white;
-  color: #B60056;
+  color: var(--secondary-color);
   cursor: pointer;
 }
   
@@ -176,9 +182,8 @@ header {
   .exhibitions {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width: 100%; /* Full width of the viewport */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    /*white-space: nowrap; /* Prevent line break, making all images in one row */
+    width: 100%;
+    overflow-x: auto;
   }
 
   .exhibitions-gallery {
@@ -194,6 +199,9 @@ header {
 
   .gallery-container {
     position: relative;
+  }
+
+  .gallery-container a {
     color: white;
   }
 
@@ -223,7 +231,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #0B1E2C;
+    background-color: var(--primary-color);
     color: white;
   }
 
@@ -273,13 +281,13 @@ header {
   }
 
   footer {
-    background-color: #0D0D0B;
+    background-color: var(--tertiary-color);
+    color: white;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     gap: 0.5rem;
   }
 
@@ -288,12 +296,6 @@ header {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-  }
-
-  .footer-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
 
   .footer-end {
@@ -309,12 +311,8 @@ header {
   }
 
   @media only screen and (min-width: 500px) and (max-width: 720px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-
     .hero h2 {
-      font-size: 3.4rem;
+      font-size: 3.75rem;
     }
 
     .hero h1,
@@ -328,8 +326,11 @@ header {
     }  
   }
 
-
   @media only screen and (min-width: 721px) and (max-width: 900px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
     .hero h2 {
       font-size: 5rem;
     }
@@ -348,10 +349,13 @@ header {
     }  
   }
 
-
   @media only screen and (min-width: 901px){
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
     .hero h2 {
-      font-size: 4.6rem;
+      font-size: 4.8rem;
     }
 
     .activities {
@@ -394,7 +398,6 @@ header {
 
   /* EXHIBITIONS */
 
-
   .exhibition-card {
     display: flex;
     flex-wrap: wrap;
@@ -421,7 +424,7 @@ header {
   .exhibition-activity {
     display: flex;
     flex-direction: column;
-    background-color: #0B1E2C;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     align-items: center;
@@ -482,7 +485,7 @@ header {
   }
 
   .event-date {
-    background-color: #0B1E2C;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 4px;
     padding: 0.5rem;
@@ -575,7 +578,7 @@ header {
   .send-message input,
   .send-message textarea {
     padding: 0.3rem;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: var(--font-secondary);
     font-size: 1rem;
     border-radius: 6px;
     border: none;
@@ -707,7 +710,7 @@ header {
   .contribution-card {
     display: flex;
     flex-direction: column;
-    background-color: #0B1E2C;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     align-items: center;
@@ -728,7 +731,7 @@ header {
   .contributions-innovation {
     display: flex;
     flex-direction: column;
-    background-color: #0B1E2C;
+    background-color: var(--primary-color);
   }
 
   .contributions-innovation img {
