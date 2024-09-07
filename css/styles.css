@@ -554,6 +554,10 @@ header {
     margin-bottom: 1rem;
   }
 
+  .contact-text {
+    text-decoration: none;
+  }
+
   .opening-hours {
     display: flex;
     flex-direction: column;
