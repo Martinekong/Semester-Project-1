@@ -309,6 +309,11 @@ header {
     gap: 6rem;
   }
 
+  .footer-end a {
+    text-decoration: none;
+    color: white;
+  }
+
   .footer-planets {
     max-width: 100%;
   }
