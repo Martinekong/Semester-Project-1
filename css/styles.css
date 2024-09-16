@@ -51,7 +51,7 @@ p {
   justify-content: center;
   color: white;
   background-color: var(--secondary-color);
-  padding: 10px;
+  padding: .63em;
   font-family: var(--font-secondary);
   text-decoration: none;
   font-size: 1.2rem;
@@ -100,7 +100,7 @@ header {
   padding: 1rem;
   top:0;
   right: 0;
-  margin-top: 93px;
+  margin-top: 5.81em;
   transition: 0.3s;
 }
 
