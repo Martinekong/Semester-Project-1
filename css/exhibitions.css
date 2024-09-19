@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .event-info p:first-child {
@@ -103,6 +103,6 @@
   }  
 
   .event-card img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
