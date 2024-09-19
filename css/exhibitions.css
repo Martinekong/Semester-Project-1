@@ -1,3 +1,7 @@
+.exhibitions-header {
+  padding: 2rem 2rem 0;
+}
+
 .exhibition-card {
   display: flex;
   flex-wrap: wrap;

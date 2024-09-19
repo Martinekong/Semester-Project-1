@@ -11,10 +11,6 @@ main {
   align-items: center;
 }
 
-.page-header { /*Exhibitions, privacy policy, terms and conditions*/
-  padding: 2rem 2rem 0;
-}
-
 /* TYPOGRAPHY  */
 h1, h2, h3 {
   font-family: var(--font-primary);
@@ -174,6 +170,10 @@ footer {
 .documents {
   padding: 2rem;
   max-width: 800px;
+}
+
+.document-header {
+  padding-bottom: 2rem;
 }
 
 .documents div {
