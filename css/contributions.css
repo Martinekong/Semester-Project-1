@@ -100,7 +100,9 @@
   }
 
   .contributions-innovation img {
-    display: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 
   .contributions-hero {
@@ -109,8 +111,6 @@
 
   .contributions-innovation {
     flex-direction: row;
-    background-image: url(../assets/images/contribution-lightbulb.jpg);
-    background-size: 100%;
     justify-content: center;
   }
 
