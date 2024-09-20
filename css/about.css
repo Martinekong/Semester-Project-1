@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
   background-size: cover;
 }
@@ -12,11 +12,9 @@
 .about-header h3,
 .about-header p {
   color: white;
-  text-align: center;
 }
 
 .about-header p {
-  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -89,18 +87,7 @@
   justify-content: center;
 }
 
-@media only screen and (min-width:500px) and (max-width: 720px) {
-  .about-header {
-    padding: 4rem;
-  }
-}
-
 @media only screen and (min-width: 721px) {
-  .about-header p {
-    padding-right: 10%;
-    padding-left: 10%;
-  }
-
   .offer-section {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -124,16 +111,21 @@
   .join-us {
     padding-bottom: 4rem;
   }
+
+  .about-header p {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 900px) {
-  .about-header{
-    padding: 6rem;
+  .about-header p {
+    max-width: 60%;
   }
 }
 
 @media only screen and (min-width: 901px){
-  .about-header {
-    padding: 8rem;
+  .about-header p {
+    max-width: 50%;
+    margin-top: 1rem;
   }
 }
