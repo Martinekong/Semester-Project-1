@@ -5,15 +5,10 @@
   padding: var(--hero-padding-small);
   gap: 1rem;
   background-size: cover;
-}
-
-.about-hero h1,
-.about-hero h3,
-.about-hero p {
   color: white;
 }
 
-.about-hero p {
+.about-text p {
   margin-bottom: 1rem;
 }
 
@@ -87,7 +82,7 @@
 }
 
 @media only screen and (min-width: 721px) {
-  .about-hero p {
+  .about-text p {
     margin-bottom: 2rem;
   }
 
@@ -121,7 +116,7 @@
     padding: var(--hero-padding-medium);
   }
 
-  .about-hero p {
+  .about-text p {
     max-width: 60%;
   }
 }
@@ -130,8 +125,8 @@
   .about-hero {
     padding: var(--hero-padding-large);
   }
-  
-  .about-hero p {
+
+  .about-text p {
     max-width: 50%;
     margin-top: 1rem;
   }
