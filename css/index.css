@@ -126,6 +126,7 @@
   color: white;
   padding: 3rem;
   text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   background-size: cover;
