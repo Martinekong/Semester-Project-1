@@ -71,8 +71,8 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
-  justify-content: space-between;
 }
 
 .innovation-text,
@@ -118,5 +118,9 @@
 @media only screen and (min-width: 901px) {
   .contributions-hero {
     padding: var(--hero-padding-large);
+  }
+
+  .innovation-text {
+    gap: 2rem;
   }
 }
