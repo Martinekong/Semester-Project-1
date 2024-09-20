@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-on-primary);
   padding: 1rem;
   align-items: center;
   text-align: center;
@@ -77,7 +77,7 @@
 
 .innovation-text,
 .innovation-text a {
-  color: white;
+  color: var(--text-on-primary);
 }
 
 @media only screen and (min-width: 721px) {
