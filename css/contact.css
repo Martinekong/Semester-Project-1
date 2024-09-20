@@ -1,14 +1,14 @@
-.contact-us {
+.contact-hero {
   background-image: url(../assets/images/contact-header.jpg);
   color: white;
   background-size: cover;
-  padding: 4rem;
+  padding: var(--hero-padding-small);
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.contact-us h1 {
+.contact-hero h1 {
   margin-bottom: 1rem;
 }
 
@@ -92,23 +92,21 @@
 }
 
 @media only screen and (min-width: 500px) {
-  .opening-hours {
-    flex-direction: row;
-    gap: 3rem;
+  .contact-hero {
+    gap: 6rem;
   }
 
-  .contact-us h1 {
+  .contact-hero h1 {
     margin-bottom: 4rem;
   }
 
-  .contact-us p {
+  .contact-hero p {
     line-height: 30px;
   }
 
-  .contact-us {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    gap: 6rem;
+  .opening-hours {
+    flex-direction: row;
+    gap: 3rem;
   }
 }
 
@@ -125,7 +123,17 @@
   }
 }
 
+@media only screen and (min-width: 721px) and (max-width: 900px) {
+  .contact-hero {
+    padding: var(--hero-padding-medium);
+  }
+}
+
 @media only screen and (min-width: 901px) {
+  .contact-hero {
+    padding: var(--hero-padding-large);
+  }
+  
   .contact-text {
     max-width: 40%;
   }

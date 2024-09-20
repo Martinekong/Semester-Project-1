@@ -7,4 +7,8 @@
   --font-primary: "Montserrat", Arial, Helvetica, sans-serif;
   --font-secondary: "Poppins", Arial, Helvetica, sans-serif;
 
+  --hero-padding-small: 3rem;
+  --hero-padding-medium: 4rem;
+  --hero-padding-large: 5rem;
+
 }

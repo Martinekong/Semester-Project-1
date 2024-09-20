@@ -1,20 +1,19 @@
-.about-header {
+.about-hero {
   background-image: url(../assets/images/about-header.jpg);
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  align-items: left;
+  padding: var(--hero-padding-small);
   gap: 1rem;
   background-size: cover;
 }
 
-.about-header h1,
-.about-header h3,
-.about-header p {
+.about-hero h1,
+.about-hero h3,
+.about-hero p {
   color: white;
 }
 
-.about-header p {
+.about-hero p {
   margin-bottom: 1rem;
 }
 
@@ -88,6 +87,10 @@
 }
 
 @media only screen and (min-width: 721px) {
+  .about-hero p {
+    margin-bottom: 2rem;
+  }
+
   .offer-section {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -111,20 +114,24 @@
   .join-us {
     padding-bottom: 4rem;
   }
-
-  .about-header p {
-    margin-bottom: 2rem;
-  }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 900px) {
-  .about-header p {
+  .about-hero {
+    padding: var(--hero-padding-medium);
+  }
+
+  .about-hero p {
     max-width: 60%;
   }
 }
 
 @media only screen and (min-width: 901px){
-  .about-header p {
+  .about-hero {
+    padding: var(--hero-padding-large);
+  }
+  
+  .about-hero p {
     max-width: 50%;
     margin-top: 1rem;
   }
